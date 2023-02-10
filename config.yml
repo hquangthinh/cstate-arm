@@ -208,6 +208,12 @@ params:
     - name: QA Third Environment - BIL
       category: PBS
       link: https://bil-third-aue-qa-014.azurewebsites.net/health
+    - name: DEV - ARM
+      category: PBS
+      link: https://arm-dev-aue-qa-099.azurewebsites.net/health
+    - name: DEV - BIL
+      category: PBS
+      link: https://bil-dev-aue-qa-099.azurewebsites.net/health
     
 
   # What date format to use?
