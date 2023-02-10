@@ -43,7 +43,7 @@
 
 # What is your status page called?
 # Shows up in the browser bar and meta tags
-title: Eggsample Status
+title: ARM SASS Status
 
 # Should posts, which have a publish date
 # from the future, be built? Useful for
@@ -97,7 +97,7 @@ defaultContentLanguage: en
 #
 # Broken example:
 # baseUrl: /
-baseURL: https://example.com
+baseURL: https://status.epicorarm.com
 
 # For features like Last modified, you
 # need to use a Git repository. If you
@@ -143,10 +143,24 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   categories:
-    - name: North Coast
-      description: The main servers are located here.
-      closed: true
-    - name: Empty Category
+    - name: Australia
+      description: Sites in Australia subscription
+      closed: false
+    - name: USA
+      description: Sites in USA subscription
+      closed: false
+    - name: Canada
+      description: Sites in Canada subscription
+      closed: false
+    - name: UK
+      description: Sites in UK subscription
+      closed: false
+    - name: Europe
+      description: Sites in Europe subscription
+      closed: false
+    - name: PBS
+      description: Sites in PBS DEV/QA/DEMO subscription
+      closed: false
     - name: Uncategorized
       untitled: true
 
@@ -158,20 +172,43 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   systems:
-    - name: Gateway
-      category: North Coast
-    - name: Backup Gateway
-      category: North Coast
-    - name: Website
-      description: The web frontend for the application.
-      category: Uncategorized
-      link: https://example.com/
-    - name: API
-      description: The guts of the application.
-      category: Uncategorized
-    - name: Media Proxy
-      description: This is the service responsible for serving images, audio, and video. It is reliant on our CDN.
-      category: Uncategorized
+    - name: Bradken Third Environment - ARM
+      category: Australia
+      link: https://arm-third-aue-bradken-008.azurewebsites.net/health
+    - name: Bradken Third Environment - BIL
+      category: Australia
+      link: https://bil-third-aue-bradken-008.azurewebsites.net/health
+    - name: MCI Pilot Environment - ARM
+      category: USA
+      link: https://arm-pilot-eastus2-mci-003.azurewebsites.net/health
+    - name: MCI Pilot Environment - BIL
+      category: USA
+      link: https://bil-pilot-eastus2-mci-003.azurewebsites.net/health
+    - name: MCI Prod Environment - ARM
+      category: USA
+      link: https://arm-prod-eastus2-mci-004.azurewebsites.net/health
+    - name: MCI Pilot Environment - BIL
+      category: USA
+      link: https://bil-prod-eastus2-mci-004.azurewebsites.net/health
+    - name: PCI Pilot Environment - ARM
+      category: USA
+      link: https://arm-pilot-eastus2-pci-011.azurewebsites.net/health
+    - name: PCI Pilot Environment - BIL
+      category: USA
+      link: https://arm-pilot-eastus2-pci-011.azurewebsites.net/health
+    - name: QA Test Environment - ARM
+      category: PBS
+      link: https://arm-test-aue-qa-005.azurewebsites.net/health
+    - name: QA Test Environment - BIL
+      category: PBS
+      link: https://bil-test-aue-qa-005.azurewebsites.net/health
+    - name: QA Third Environment - ARM
+      category: PBS
+      link: https://arm-third-aue-qa-014.azurewebsites.net/health
+    - name: QA Third Environment - BIL
+      category: PBS
+      link: https://bil-third-aue-qa-014.azurewebsites.net/health
+    
 
   # What date format to use?
   #
@@ -286,7 +323,7 @@ params:
   #
   # Recommended: png, bmp, jpg, or gif
   # for best browser support!
-  logo: logo.png
+  logo: logoPrecise.svg
 
   # This is the description that is shown
   # on the footer and meta tags.
